@@ -14,6 +14,11 @@ function PageRouter() {
   return (
     <Router>
       <Switch>
+        <Route path="/charlie">
+          <div className="App">
+            <NamePage />
+          </div>
+        </Route>
         <Route path="/otherpage">
           <div className="App">
             <OtherPageEx />
@@ -22,11 +27,6 @@ function PageRouter() {
         <Route path="/">
           <div className="App">
             <Home />
-          </div>
-        </Route>
-        <Route path="/charlie">
-          <div className="App">
-            <NamePage />
           </div>
         </Route>
       </Switch>
