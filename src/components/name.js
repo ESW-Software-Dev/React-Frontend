@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 const Name = () => {
   return (
     <div>
-      <h1>Charlie</h1>
+      <h1 className="logoFont">Charlie</h1>
     </div>
   )
 }
