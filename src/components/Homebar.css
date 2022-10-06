@@ -1,0 +1,14 @@
+.homebarFont{
+  position: relative;
+  width: 600px;
+  height: 47px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+
+  color: #C20606;
+}
