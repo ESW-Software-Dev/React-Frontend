@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="home.css">
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -11,16 +11,32 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-
     <!--import in roboto from google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    
-    
     <title>CornellPop</title>
   </head>
   <body>
+    <section>
+      <div class="toolbar">
+        <div class="homelink">
+        <a class = "homelink" href="#home">Project Name</a>
+        </div>
+        <a href="#about">About</a>
+        <a href="#find">Find Leftovers</a>
+        <a href="#post">Post Leftovers</a>
+        <a href="#login">Login</a>
+      </div>
+    </section>
+    <div class = "main">
+      <div class = "maintext">
+        <h1>Discover and post food around Cornell's campus</h1>
+      </div>
+      <div class = "main_image">
+        <img src="mainimg.jpg" alt="Food Sharing">
+      </div>
+    </div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>

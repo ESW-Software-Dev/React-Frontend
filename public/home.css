@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: -box;
+    font-family: "Asap", sans-serif;
+}
+html {
+overflow: hidden;
+background-color: white;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+box-sizing: border-box;
+}
+
+.toolbar {
+    text-align: right;
+    padding-right: 30px;
+    height: 100px;
+    background-color: #BA2626;
+}
+.toolbar a{
+    display:inline-block;
+    color: white;
+    padding-left: 40px;
+    padding-top: 34px;
+    font-size: 26px;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: bolder;
+    -webkit-transition: color .5s linear;
+    -moz-transition: color .5s linear;
+    -ms-transition: color .5s linear;
+    -o-transition: color .5s linear;
+    transition: color .5s linear;
+}
+.toolbar a:hover{
+    color: #CAC1C1;
+}
+.toolbar .homelink a{
+    color : white;
+    float: left;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-left: 60px;
+}
+.main {
+    width: 100%;
+}
+.maintext {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    padding-top: 20vh;
+    width: 40%;
+    font-size: 1.8vw;
+    padding-left: 8%;
+    background-color: green;
+    
+}
+.main_image{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    background-color: blue;
+    height: 500px;
+}
+.main_image img{
+    padding-top: 150px;
+    width: 80%;
+    padding-left: 40px;
+}
