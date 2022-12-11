@@ -1,5 +1,5 @@
 import './App.css';
-import Home from './pages/Home.js';
+import Login from './pages/Login.js';
 import OtherPageEx from './pages/OtherPageEx.js';
 import {
   BrowserRouter as Router,
@@ -12,14 +12,14 @@ function PageRouter() {
   return (
     <Router>
       <Switch>
-      <Route path = "/otherpage">
+        <Route path="/otherpage">
           <div className="App">
-            <OtherPageEx/>
+            <OtherPageEx />
           </div>
         </Route>
-        <Route path = "/">
+        <Route path="/">
           <div className="App">
-            <Home/>
+            <Login />
           </div>
         </Route>
       </Switch>
