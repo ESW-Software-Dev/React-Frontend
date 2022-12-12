@@ -26,6 +26,61 @@ h1 {
   color: white;
 }
 
+.login {
+  width: 320px;
+  padding: 30px;
+  padding-top: 156px;
+  align-self: center;
+}
+
+.login__field {
+  padding: 20px 0px;
+  position: relative;
+}
+
+.login__icon {
+  position: absolute;
+  top: 30px;
+  color: black;
+}
+
+.login__input {
+  border: none;
+  border-bottom: 2px solid #D1D1D4;
+  background: none;
+  padding: 10px;
+  padding-left: 24px;
+  font-weight: 700;
+  width: 75%;
+  transition: .2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+  outline: none;
+}
+
+.login__submit {
+  background: #BA2626;
+  color: white;
+  font-size: 20px;
+  padding: 10px 14px;
+  border-radius: 26px;
+  font-weight: bold;
+  align-items: center;
+  cursor: pointer;
+  transition: .2s;
+  border: none;
+  outline: none;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+  outline: none;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
