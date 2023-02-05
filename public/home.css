@@ -5,7 +5,6 @@
     font-family: "Asap", sans-serif;
 }
 html {
-overflow: hidden;
 background-color: white;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -49,26 +48,55 @@ box-sizing: border-box;
     width: 100%;
 }
 .maintext {
-    display: inline-block;
+    display: block;
     padding: 0;
     margin: 0;
     padding-top: 20vh;
     width: 40%;
     font-size: 1.8vw;
     padding-left: 8%;
-    background-color: green;
+    float: left;
     
 }
 .main_image{
-    display: inline-block;
-    padding: 0;
-    margin: 0;
+    display: block;
+    padding-top: 25vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    float: right;
+    margin-top: 0;
     width: 40%;
-    background-color: blue;
     height: 500px;
 }
 .main_image img{
-    padding-top: 150px;
-    width: 80%;
-    padding-left: 40px;
+    width: 90%;
+    border-radius: 2%;
 }
+
+.maintext .find-food-btn, .post-food-btn {
+    background-color: #BA2626; /* Green */
+    border: none;
+    margin-top: 40px;
+    margin-left: 10px;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .maintext a{
+      text-decoration: none;
+  }
+  .post-food-btn{
+    margin-left: 40px;
+  }
+
+  .lowerbar{
+      width:100%;
+      background-color: #BA2626;
+      height: 18vw;
+      margin-top: 50vw;
+  }
