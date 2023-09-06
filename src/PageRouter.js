@@ -1,6 +1,7 @@
 import './App.css';
 import Login from './pages/Login.js';
 import About from './pages/OtherPageEx.js';
+import Post from './pages/PostPage.js';
 import Logo from "./components/Logo.js";
 import './navbar.css';
 import {
@@ -23,6 +24,9 @@ function PageRouter() {
             <li>
               <Link to="/about">About</Link>
             </li>
+            <li>
+              <Link to="/post">Post</Link>
+            </li>
           </ul>
         </nav>
 
@@ -32,6 +36,9 @@ function PageRouter() {
           </Route>
           <Route path="/">
             <Login />
+          </Route>
+          <Route path="/post">
+            <Post />
           </Route>
         </Switch>
       </div>
