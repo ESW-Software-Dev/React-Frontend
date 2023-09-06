@@ -1,6 +1,8 @@
 import './App.css';
 import Login from './pages/Login.js';
-import OtherPageEx from './pages/OtherPageEx.js';
+import About from './pages/OtherPageEx.js';
+import Logo from "./components/Logo.js";
+import './navbar.css';
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,19 +13,43 @@ import {
 function PageRouter() {
   return (
     <Router>
-      <Switch>
-        <Route path="/otherpage">
-          <div className="App">
-            <OtherPageEx />
-          </div>
-        </Route>
-        <Route path="/">
-          <div className="App">
+      <div>
+        <nav>
+          <Logo />
+          <ul>
+            <li>
+              <Link to="/">Login</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/">
             <Login />
-          </div>
-        </Route>
-      </Switch>
+          </Route>
+        </Switch>
+      </div>
     </Router>
+    // <Router>
+    //   <Switch>
+    //     <Route path="/about">
+    //       <div className="App">
+    //         <About />
+    //       </div>
+    //     </Route>
+    //     <Route path="/">
+    //       <div className="App">
+    //         <Login />
+    //       </div>
+    //     </Route>
+    //   </Switch>
+    // </Router>
   );
 }
 

@@ -2,13 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Logo from "../components/Logo.js";
 
-const OtherPageEx = () => {
+const About = () => {
   return (
-    <div>
-      <Logo/>
-      <h2>this is an example of another page</h2>
-    </div>
+    <>
+      {/* <div class="topnav" margin-bottom="120px">
+        <Logo />
+        <a href="#login">Login</a>
+        <a href="#post">Post Leftover Food</a>
+        <a href="#searchpage">Find Leftover Food</a>
+        <a class="active" href="#about">About</a>
+      </div> */}
+
+      <center><h1>Example of another page</h1></center>
+
+    </>
   )
 }
 
-export default OtherPageEx;
+
+export default About;

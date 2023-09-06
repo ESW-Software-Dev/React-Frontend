@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Logo from "../components/Logo.js";
+import About from './OtherPageEx.js';
 
 const Login = () => {
   return (
     <>
-      <div class="topnav" margin-bottom="120px">
+      {/* <div class="topnav" margin-bottom="120px">
         <Logo />
-        <a class="active" href="#home">Login</a>
-        <a href="#news">Post Leftover Food</a>
-        <a href="#contact">Find Leftover Food</a>
+        <a class="active" href="#login">Login</a>
+        <a href="#post">Post Leftover Food</a>
+        <a href="#searchpage">Find Leftover Food</a>
         <a href="#about">About</a>
-      </div>
+      </div> */}
 
       <center><h1>Log in with your Cornell NetID</h1></center>
 
