@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Logo from "../components/Logo.js";
 
-const Search = () => {
+const Home = () => {
   return (
     <>
       {/* <div class="topnav" margin-bottom="120px">
@@ -13,11 +13,11 @@ const Search = () => {
         <a class="active" href="#about">About</a>
       </div> */}
 
-      <center><h1>Search page</h1></center>
+      <center><h1>Home page</h1></center>
 
     </>
   )
 }
 
 
-export default Search;
+export default Home;
