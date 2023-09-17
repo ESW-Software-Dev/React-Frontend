@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: -box;
+  font-family: "Asap", sans-serif;
+}
+html {
+background-color: white;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+box-sizing: border-box;
+}
+
+.toolbar {
+  text-align: right;
+  padding-right: 30px;
+  height: 100px;
+  background-color: #BA2626;
+}
+.toolbar a{
+  display:inline-block;
+  color: white;
+  padding-left: 40px;
+  padding-top: 34px;
+  font-size: 26px;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-weight: bolder;
+  -webkit-transition: color .5s linear;
+  -moz-transition: color .5s linear;
+  -ms-transition: color .5s linear;
+  -o-transition: color .5s linear;
+  transition: color .5s linear;
+}
+.toolbar a:hover{
+  color: #CAC1C1;
+}
+.toolbar .homelink a{
+  color : white;
+  float: left;
+  font-size: 50px;
+  padding-top: 20px;
+  padding-left: 60px;
+}
+
+.lowerbar{
+    width:100%;
+    background-color: #BA2626;
+    height: 16vw;
+    margin-top: 50vw;
+}
+
+.lowerbar #contact-lower{
+  color: white;
+  float: left;
+  padding-left: 120px;
+  padding-top: 80px;
+  font-size: 30px;
+  width: 13%;
+}
+
+.lowerbar #contact-lower ul{
+  padding-top: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.lowerbar #contact-lower li{
+  padding-top: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: normal;
+  list-style-type: none;
+}
+
+.lowerbar #contact-lower a{
+  padding-top: 10px;
+  color: white;
+  text-decoration: none; 
+}
+
+.lowerbar #lower-bar-images img{
+  width: 30%;
+  color: white;
+  text-decoration: none; 
+  padding-bottom: 0px;
+  padding-left: 10px;
+}
+
+.lowerbar #lower-bar-images{
+  float: right;
+  width: 20%;
+  height: 16vw;
+}
+.lowerbar #lower-bar-images #esw-logo{
+  padding-top: 30px;
+  width: 70%;
+}
+
+.lowerbar #lower-bar-images #cornell-logo{
+  width: 40%;
+  padding-left: 70px;
+}
+
+.lowerbar #nav-lower{
+  color: white;
+  float: left;
+  padding-top: 80px;
+  font-size: 30px;
+  width: 20%;
+}
+
+
+.lowerbar #nav-lower ul{
+  padding-top: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.lowerbar #nav-lower li{
+  padding-top: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: normal;
+  list-style-type: none;
+}
+
+.lowerbar #nav-lower a{
+  padding-top: 10px;
+  color: white;
+  text-decoration: none; 
+}
+
