@@ -1,6 +1,11 @@
 import './App.css';
 import Home from './pages/Home.js';
-import OtherPageEx from './pages/OtherPageEx.js';
+import Login from './pages/Login.js';
+import About from './pages/OtherPageEx.js';
+import Post from './pages/PostPage.js';
+import Search from './pages/SearchPage.js';
+import Logo from "./components/Logo.js";
+import './navbar.css';
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,19 +16,62 @@ import {
 function PageRouter() {
   return (
     <Router>
-      <Switch>
-      <Route path = "/otherpage">
-          <div className="App">
-            <OtherPageEx/>
-          </div>
-        </Route>
-        <Route path = "/">
-          <div className="App">
-            <Home/>
-          </div>
-        </Route>
-      </Switch>
+      <div>
+        <nav>
+          <Logo />
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/login">Login</Link>
+            </li>
+            <li>
+              <Link to="/post">Post Leftover Food</Link>
+            </li>
+            <li>
+              <Link to="/search">Find Leftover Food</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/search">
+            <Search />
+          </Route>
+          <Route path="/post">
+            <Post />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+
+        </Switch>
+      </div>
     </Router>
+    // <Router>
+    //   <Switch>
+    //     <Route path="/about">
+    //       <div className="App">
+    //         <About />
+    //       </div>
+    //     </Route>
+    //     <Route path="/">
+    //       <div className="App">
+    //         <Login />
+    //       </div>
+    //     </Route>
+    //   </Switch>
+    // </Router>
   );
 }
 

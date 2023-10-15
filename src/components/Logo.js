@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import "./Logo.css";
 
-const Logo = () => {
+export default function Logo() {
   return (
-    <div>
-      <h1 className="logoFont">CornellPop</h1>
-    </div>
+    <>
+      <h1 className="logoFont"></h1>
+    </>
   )
-}
+};
 
- export default Logo;
+// export default Logo;

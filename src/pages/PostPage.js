@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Logo from "../components/Logo.js";
 
-const About = () => {
+const Post = () => {
   return (
     <>
       {/* <div class="topnav" margin-bottom="120px">
@@ -13,11 +13,11 @@ const About = () => {
         <a class="active" href="#about">About</a>
       </div> */}
 
-      <center><h1>Example of another page</h1></center>
+      <center><h1>Post page</h1></center>
 
     </>
   )
 }
 
 
-export default About;
+export default Post;
