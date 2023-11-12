@@ -13,6 +13,8 @@ import {
   Link
 } from "react-router-dom";
 
+import Footer from "./Footer";
+
 function PageRouter() {
   return (
     <Router>
@@ -56,22 +58,9 @@ function PageRouter() {
           </Route>
 
         </Switch>
+        <Footer />
       </div>
     </Router>
-    // <Router>
-    //   <Switch>
-    //     <Route path="/about">
-    //       <div className="App">
-    //         <About />
-    //       </div>
-    //     </Route>
-    //     <Route path="/">
-    //       <div className="App">
-    //         <Login />
-    //       </div>
-    //     </Route>
-    //   </Switch>
-    // </Router>
   );
 }
 

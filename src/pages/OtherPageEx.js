@@ -13,6 +13,8 @@ const About = () => {
         <a class="active" href="#about">About</a>
       </div> */}
 
+      <head></head>
+
       <center><h1>Example of another page</h1></center>
 
     </>

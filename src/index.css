@@ -13,7 +13,7 @@ h1 {
   text-align: center;
   padding: 20px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -93,4 +93,49 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+footer {
+  position: fixed;
+  background-color: #BA2626;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  flex: 1;
+  /* Takes all available space on the left */
+  text-align: left;
+}
+
+.footer-right {
+  flex: 1;
+  /* Takes all available space on the right */
+  text-align: right;
+}
+
+.footer-left a {
+  text-decoration: none;
+  color: white;
+  /* Link color */
+  margin-right: 20px;
+  /* Add space between the links */
+}
+
+.styled-image {
+  max-width: 80px;
+  /* Adjust the size of the picture */
+}
+
+.styled-image2 {
+  max-width: 200px;
+  /* Adjust the size of the picture */
 }
