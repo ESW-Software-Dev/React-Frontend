@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<p>hi</p>
+
 <head>
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -20,7 +20,7 @@
   <section>
     <div class="toolbar">
       <div class="homelink">
-        <a class="homelink" href="#home">Project Name</a>
+        <a class="homelink" href="index.html">Project Name</a>
       </div>
       <a href="#about">About</a>
       <a href="find.html">Find Leftovers</a>
@@ -28,19 +28,56 @@
       <a href="#login">Login</a>
     </div>
   </section>
-  <div id="left-side">
-    <h3>Leftovers from Chipotle</h3>
-    <h5><i>Willard Strait Hall</i></h5>
-    <p> Organization name | Wednesday after 7:00 PM</p>
-    <a href="#find">
-      <button class="contact-org-btn">Contact Organization</button>
-    </a>
-    <h4> Description </h4>
-    <ul>
-      <li>Leftover burrito bowls and quesadillas</li>
-      <li>First come first serve </li>
-      <li>No utensils or containers provided</li>
-    </ul>
+  <div id="main-section">
+    <div id="left-side">
+      <h1>Leftovers from Chipotle</h1>
+      <h5><i>Willard Strait Hall</i></h5>
+      <p> Organization name | Wednesday after 7:00 PM</p>
+      <a href="#find">
+        <button class="contact-org-btn">Contact Organization</button>
+      </a>
+      <h4> Description </h4>
+      <ul>
+        <li>Leftover burrito bowls and quesadillas</li>
+        <li>First come first serve </li>
+        <li>No utensils or containers provided</li>
+      </ul>
+    </div>
+    <div id="right-side">
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="find_imgs/img1.jpg" style="width:400px; height:300px">
+          <div class="text">Chipotle Containers with Forks and Napkins</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="find_imgs/img2.png" style="width:400px; height:300px">
+          <div class="text">Bowls and Serving Spoons Included</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="find_imgs/img3.jpg" style="width:400px; height:300px">
+          <div class="text">Premade Bowls in addition to Custom</div>
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
   </div>
   <div class="lowerbar">
     <div id="contact-lower">
@@ -66,6 +103,36 @@
   </div>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
+  <script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+  </script>
 </body>
 
 </html>
