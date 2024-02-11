@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Logo from "../components/Logo.js";
+import Logo from "../components/Logo.jsx";
 
 const About = () => {
   return (
@@ -12,8 +12,6 @@ const About = () => {
         <a href="#searchpage">Find Leftover Food</a>
         <a class="active" href="#about">About</a>
       </div> */}
-
-      <head></head>
 
       <center><h1>Example of another page</h1></center>
 

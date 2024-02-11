@@ -15,8 +15,8 @@ const Footer = () => {
     </div>
     <div className="footer-right">
       {/* Picture on the right */}
-      <img src="cornell.png" alt="Footer Picture" class="styled-image" />
-      <img src="esw.png" alt="Footer Picture" class="styled-image2" />
+      <img src="cornell.png" alt="Footer Picture" className="styled-image" />
+      <img src="esw.png" alt="Footer Picture" className="styled-image2" />
     </div>
     <div className="copyright">
       {`Copyright © ESW ${year}`}

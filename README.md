@@ -7,18 +7,19 @@ we are using the React frontend
 3. install dependencies via terminal: 
 ```
 npm install
+npm i -D react-router-dom@latest
 ```
 4. you should now have a node_modules folder
 5. run the react app to make sure your set up is correct
 ```
-npm start
+npm run dev
 ```
-6. This should open up localhost:3000 in your browser.
+6. This should open up localhost:5173 in your browser.
 
 # brief tutorial on our React set up
-- public/index.html is what the localhost:3000 is displaying. 
-- this html file runs the javascript file in src/index.js.
-- src/index.js runs src/PageRouter.js, which routes to the correct page based on url. 
+- public/index.html is what the localhost:5173 is displaying. 
+- this html file runs the javascript file in src/main.jsx.
+- src/main.jsx runs src/PageRouter.jsx, which routes to the correct page based on url. 
 - the react-router-dom package matches the url path with the page.
 - the pages are in the src/pages folder
 - pages use React components, which are in src/components (if you are unfamiliar with React, components
@@ -30,4 +31,4 @@ TRY: make a new branch, call it "{yourname}/try". Create a new component that re
 your name. Create a new page that displays your component. Create a new route to 
 your page at localhost:3000/{yourname}. Add/commit and push this to YOUR NEW BRANCH on github, NOT the main.
 
-If any questions, contact Ka-Hyun :)
+If any questions, ask Ethan

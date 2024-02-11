@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Logo from "../components/Logo.js";
+import Logo from "../components/Logo.jsx";
 import { Link } from "react-router-dom";
 import './Home.css';
 

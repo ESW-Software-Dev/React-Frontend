@@ -1,19 +1,19 @@
 import './App.css';
-import Home from './pages/Home.js';
-import Login from './pages/Login.js';
-import About from './pages/OtherPageEx.js';
-import Post from './pages/PostPage.js';
-import Search from './pages/SearchPage.js';
-import Logo from "./components/Logo.js";
+import Home from './pages/Home.jsx';
+import Login from './pages/Login.jsx';
+import About from './pages/OtherPageEx.jsx';
+import Post from './pages/PostPage.jsx';
+import Search from './pages/SearchPage.jsx';
+import Logo from "./components/Logo.jsx";
 import './navbar.css';
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
   Link
 } from "react-router-dom";
 
-import Footer from "./Footer";
+import Footer from "./Footer.jsx";
 
 function PageRouter() {
   return (
@@ -40,11 +40,11 @@ function PageRouter() {
           </ul>
         </nav>
 
-        <Switch>
-          <Route path="/about">
+        <Routes>
+          {/* <Route path="/about">
             <About />
-          </Route>
-          <Route path="/search">
+          </Route> */}
+          {/* <Route path="/search">
             <Search />
           </Route>
           <Route path="/post">
@@ -55,9 +55,13 @@ function PageRouter() {
           </Route>
           <Route path="/">
             <Home />
-          </Route>
-
-        </Switch>
+          </Route> */}
+          <Route path="/about" element={<About />}/>
+          <Route path="/search" element={<Search />} />
+          <Route path="/post" element={<Post />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
         <Footer />
       </div>
     </Router>
