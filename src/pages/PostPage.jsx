@@ -1,23 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Logo from "../components/Logo.jsx";
-
-const Post = () => {
+import AddPostSection from '../components/Posts/AddPostSection.jsx';
+import {useState} from 'react'
+export default function PostPage ({
+  posts,
+  addPost
+})  {
+  const [isPostSectionOpen, setIsPostSectionOpen] = useState(false);
   return (
     <>
-      {/* <div class="topnav" margin-bottom="120px">
-        <Logo />
-        <a href="#login">Login</a>
-        <a href="#post">Post Leftover Food</a>
-        <a href="#searchpage">Find Leftover Food</a>
-        <a class="active" href="#about">About</a>
-      </div> */}
-
-      <center><h1>Post page</h1></center>
-
+      <center>
+        <h1>Post page</h1>
+        <button 
+          className='addpost-toggle'
+          onClick={() => setIsPostSectionOpen(!isPostSectionOpen)}>
+            +
+        </button>
+      </center>
+      <AddPostSection
+        posts={posts}
+        AddPost={addPost}
+        isOpen = {isPostSectionOpen}
+      />
     </>
   )
 }
 
-
-export default Post;

@@ -1,23 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Logo from "../components/Logo.jsx";
-
-const Search = () => {
+import DisplayPosts from '../components/DisplayPosts.jsx';
+export default function Search ({
+  posts
+}){
   return (
     <>
-      {/* <div class="topnav" margin-bottom="120px">
-        <Logo />
-        <a href="#login">Login</a>
-        <a href="#post">Post Leftover Food</a>
-        <a href="#searchpage">Find Leftover Food</a>
-        <a class="active" href="#about">About</a>
-      </div> */}
-
       <center><h1>Search page</h1></center>
-
+      <DisplayPosts posts={posts}/>
     </>
   )
 }
 
 
-export default Search;
