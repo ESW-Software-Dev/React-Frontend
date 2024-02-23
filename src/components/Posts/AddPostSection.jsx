@@ -16,13 +16,15 @@ export default function AddPostSection (props) {
       }
     return (
         <div className={isOpen}>
-            <DisplayForm 
-                formTitle="Add Post"
-                id="post"
-                onChange={handlePostInfoChange}
-                onSubmit= {handlePostSubmit}
-                FormComponent={AddPost}
-            />
+            <div className='section-container'>
+                <DisplayForm 
+                    formTitle="Add Post"
+                    id="post"
+                    onChange={handlePostInfoChange}
+                    onSubmit= {handlePostSubmit}
+                    FormComponent={AddPost}
+                />
+            </div>
         </div>
     )
 }

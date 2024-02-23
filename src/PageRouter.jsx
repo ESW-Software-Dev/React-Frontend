@@ -18,7 +18,8 @@ import Footer from "./Footer.jsx";
 
 function PageRouter() {
   const [count, setCount] = useState(1);
-  const [posts, setPosts] = useState([{name:'Ethan',netid:"eyl45",location:"Gates Hall",food:"none",id:0}]);
+  const [posts, setPosts] = useState([]);
+  const [user, setUser] = useState({name: 'Ethan', netid:"eyl45"})
 
   const handlePostsChange = (obj) => {
     obj['id'] = count;
@@ -61,7 +62,7 @@ function PageRouter() {
         <Routes>
           <Route path="/about" element={<About />}/>
           <Route path="/search" element={<Search posts={posts}/>} />
-          <Route path="/post" element={<PostPage posts={posts} addPost={handlePostsChange}/>} />
+          <Route path="/post" element={<PostPage posts={posts} addPost={handlePostsChange} user={user}/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<Home />} />
         </Routes>
