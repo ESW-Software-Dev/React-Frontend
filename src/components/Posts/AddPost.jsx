@@ -67,7 +67,7 @@ export default function AddPost({
             <CustomInput 
                 id="post-description-input"
                 labelText="Description"
-                placeholderText="6:30 PM"
+                placeholderText="Spring Rolls"
                 type="text-area"
                 value={description}
                 onChange={onChange}
