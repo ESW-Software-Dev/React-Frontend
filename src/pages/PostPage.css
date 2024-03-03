@@ -1,0 +1,33 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.horizontal {
+    display: flex;
+}
+
+.addpost-toggle {
+    background:none;
+    border-style: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: var(--main-font);
+    font-size: 24px;
+    border-radius: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+    width:40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.addpost-toggle:hover {
+    background-color: rgb(200,200,200);
+  }

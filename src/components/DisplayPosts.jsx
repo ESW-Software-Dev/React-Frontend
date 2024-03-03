@@ -1,4 +1,5 @@
 import Post from "./Posts/Post.jsx"
+import './DisplayPosts.css'
 export default function DisplayPosts ({
     posts
 }) {
@@ -7,5 +8,5 @@ export default function DisplayPosts ({
             <Post post={post}/>
         </li>
     );
-    return <ul>{listItems}</ul>
+    return <ul className="post-list">{listItems}</ul>
 }

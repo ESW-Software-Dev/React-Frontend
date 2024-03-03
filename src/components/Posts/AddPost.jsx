@@ -4,9 +4,12 @@ export default function AddPost({
     id,
     name,
     netid,
+    restaurant,
+    org,
     location,
-    food,
-    hours,
+    date,
+    time,
+    description,
     onChange,
     onSubmit
 }){
@@ -16,6 +19,60 @@ export default function AddPost({
             className="add-post"
             data-array-name="posts"
             onSubmit={onSubmit}>
+            <CustomInput 
+                id="post-restaurant-input"
+                labelText="Restaurant"
+                placeholderText="Taste of Thai"
+                type="text"
+                value={restaurant}
+                onChange={onChange}
+                data-key="restaurant"
+            />  
+            <CustomInput 
+                id="post-org-input"
+                labelText="Organization"
+                placeholderText="ESW"
+                type="text"
+                value={org}
+                onChange={onChange}
+                data-key="org"
+            />   
+            <CustomInput 
+                id="post-location-input"
+                labelText="Location"
+                placeholderText="Hollister B14"
+                type="text"
+                value={location}
+                onChange={onChange}
+                data-key="location"
+            />  
+            <CustomInput 
+                id="post-date-input"
+                labelText="Date"
+                placeholderText="2/23/24"
+                type="date"
+                value={date}
+                onChange={onChange}
+                data-key="date"
+            />   
+            <CustomInput 
+                id="post-time-input"
+                labelText="Time"
+                placeholderText=""
+                type="time"
+                value={time}
+                onChange={onChange}
+                data-key="time"
+            />   
+            <CustomInput 
+                id="post-description-input"
+                labelText="Description"
+                placeholderText="Spring Rolls"
+                type="text-area"
+                value={description}
+                onChange={onChange}
+                data-key="description"
+            />   
             <CustomInput 
                 id="post-name-input"
                 labelText="Owner Name"
@@ -34,24 +91,7 @@ export default function AddPost({
                 onChange={onChange}
                 data-key="netid"
             />   
-            <CustomInput 
-                id="post-loc-input"
-                labelText="Location"
-                placeholderText="Gates Hall"
-                type="text"
-                value={location}
-                onChange={onChange}
-                data-key="location"
-            />  
-            <CustomInput 
-                id="post-food-input"
-                labelText="Food Description"
-                placeholderText="From Taste of Thai"
-                type="textarea"
-                value={food}
-                onChange={onChange}
-                data-key="food"
-            />  
+
             <button type="submit"> Submit </button>
         </form>
     );
