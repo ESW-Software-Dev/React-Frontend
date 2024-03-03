@@ -1,5 +1,5 @@
 import "./Post.css"
-export default function Post({post}) {
+export default function Post({ post }) {
     return (<>
         <center className="post-container">
             <div className="img-container">
@@ -33,3 +33,6 @@ export default function Post({post}) {
         </center>
     </>)
 }
+
+
+
