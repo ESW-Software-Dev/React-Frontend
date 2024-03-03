@@ -5,7 +5,7 @@ import "./Logo.css";
 export default function Logo() {
   return (
     <>
-      <h1 className="logoFont">CornellPop</h1>
+      <h1 className="logoFont">LeftoverFoodSolutions</h1>
     </>
   )
 };
