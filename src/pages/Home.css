@@ -30,11 +30,7 @@ html {
   text-decoration: none;
   font-family: 'Roboto';
   font-weight: bolder;
-  -webkit-transition: color .5s linear;
-  -moz-transition: color .5s linear;
-  -ms-transition: color .5s linear;
-  -o-transition: color .5s linear;
-  transition: color .5s linear;
+
 }
 
 .toolbar a:hover {

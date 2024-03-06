@@ -35,8 +35,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #ddd;
+  background-color: #e8bfbf;
   color: black;
+  transition: 0.5s;
 }
 
 nav ul li a.active {
