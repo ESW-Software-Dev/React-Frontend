@@ -8,11 +8,11 @@ export default function DisplayForm ({
     return (
         <div className="forms-container">
             <h1> {formTitle} </h1>
-                <FormComponent
-                    onChange={onChange}
-                    onSubmit={onSubmit}
-                    id={id}
-              />
+            <FormComponent
+                onChange={onChange}
+                onSubmit={onSubmit}
+                id={id}
+            />
         </div>
     )
 }

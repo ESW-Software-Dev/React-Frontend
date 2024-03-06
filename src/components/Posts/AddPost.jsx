@@ -20,7 +20,7 @@ export default function AddPost({
             <div className="Touchdown" style={{ marginLeft: '20px', marginTop: '20px' }}>
                 <img src="src/components/Posts/Touchdown.png" alt="Touchdown" style={{ maxWidth: '100%', height: 'auto' }} />
             </div>
-            <section
+            <form
                 id={id}
                 className="add-post"
                 data-array-name="posts"
@@ -105,9 +105,8 @@ export default function AddPost({
                         />
                     </div>
                 </div>
-
                 <button type="submit">Submit</button>
-            </section>
+            </form>
         </div>
     );
 }
