@@ -6,12 +6,19 @@
     display: none;
 }
 
+
 .section-container {
     display: flex;
-    border-color: black;
-    border-style: solid;
     justify-content: center;
     align-items: center;
     padding: 20px 100px;
-    border-radius: 10px;
+}
+
+.section-column {
+    flex: 0 0 50%;
+}
+
+.section-column input {
+    width: 100%;
+    margin-bottom: 15px;
 }
