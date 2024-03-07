@@ -1,5 +1,5 @@
 import CustomInput from "../CustomInput"
-
+import "./AddPost.css"
 
 export default function AddPost({
     id,
@@ -16,9 +16,9 @@ export default function AddPost({
 }) {
     return (
 
-        <div className="add-post-container" style={{ backgroundColor: 'rgba(255, 0, 0, 0.3)', display: 'grid', gridTemplateColumns: 'auto 1fr', gap: '20px' }}>
-            <div className="Touchdown" style={{ marginLeft: '20px', marginTop: '20px' }}>
-                <img src="src/components/Posts/Touchdown.png" alt="Touchdown" style={{ maxWidth: '100%', height: 'auto' }} />
+        <div className="add-post-container">
+            <div className="touchdown-box">
+                <img className="touchdown" src="src/components/Posts/Touchdown.png" alt="touchdown" />
             </div>
             <form
                 id={id}
@@ -105,7 +105,7 @@ export default function AddPost({
                         />
                     </div>
                 </div>
-                <button type="submit">Submit</button>
+                <button className="submit-btn" type="submit">Submit</button>
             </form>
         </div>
     );

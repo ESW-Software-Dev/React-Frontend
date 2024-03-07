@@ -9,8 +9,8 @@ const Footer = () => {
   return <footer>
     <div className="footer-left">
       {/* Links on the left */}
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
+      <a href="#"></a>
+      <a href="#"></a>
       {/* Add more links as needed */}
     </div>
     <div className="footer-right">

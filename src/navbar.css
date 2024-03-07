@@ -26,7 +26,7 @@ nav ul li {
 
 nav ul li a {
   float: right;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 30px 30px;
   text-decoration: none;
@@ -35,7 +35,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #e8bfbf;
+  background-color: rgb(200,200,200);
   color: black;
   transition: 0.5s;
 }
@@ -43,8 +43,6 @@ nav ul li a:hover {
 nav ul li a.active {
   color: white;
 }
-
-
 
 .topnav {
   background-color: #BA2626;
