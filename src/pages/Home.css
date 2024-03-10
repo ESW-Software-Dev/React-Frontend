@@ -102,6 +102,14 @@ html {
   margin-left: 40px;
 }
 
+.post-food-btn:hover {
+  background-color: #8c1b1b;
+}
+
+.find-food-btn:hover {
+  background-color: #8c1b1b;
+}
+
 .lowerbar {
   width: 100%;
   background-color: #BA2626;

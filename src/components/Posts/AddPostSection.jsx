@@ -11,7 +11,7 @@ export default function AddPostSection(props) {
     }
 
     function handlePostSubmit(e) {
-        console.log("hi")
+        props.setPostSection(false);
         props.AddPost(postInfo);
         e.preventDefault();
     }

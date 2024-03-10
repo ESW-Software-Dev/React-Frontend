@@ -32,6 +32,7 @@ export default function PostPage ({
           posts={posts}
           AddPost={addPost}
           isOpen = {isPostSectionOpen}
+          setPostSection={setIsPostSectionOpen}
         />
         <DisplayPosts posts={userPosts()}/>
         
