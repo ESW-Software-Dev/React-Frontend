@@ -2,7 +2,7 @@ import React from 'react';
 import { GoogleLogin } from '@react-oauth/google';
 import ReactDOM from 'react-dom';
 import Logo from "../components/Logo.jsx";
-import About from './OtherPageEx.jsx';
+import About from './AboutPage.jsx';
 
 function Login() {
   return (

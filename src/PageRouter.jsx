@@ -1,12 +1,12 @@
 import './App.css';
 import Home from './pages/Home.jsx';
 import Login from './pages/Login.jsx';
-import About from './pages/OtherPageEx.jsx';
+import About from './pages/AboutPage.jsx';
 import PostPage from './pages/PostPage.jsx';
 import Search from './pages/SearchPage.jsx';
 import Logo from "./components/Logo.jsx";
 import './navbar.css';
-import {useState} from 'react'
+import { useState } from 'react'
 import {
   BrowserRouter as Router,
   Routes,
@@ -19,7 +19,7 @@ import Footer from "./Footer.jsx";
 function PageRouter() {
   const [count, setCount] = useState(0);
   const [posts, setPosts] = useState([]);
-  const [user, setUser] = useState({name: 'Ethan', netid:"eyl45"})
+  const [user, setUser] = useState({ name: 'Ethan', netid: "eyl45" })
 
   const handlePostsChange = (obj) => {
     obj['id'] = obj.org + obj.date + obj.time
@@ -31,7 +31,7 @@ function PageRouter() {
   }
 
   function increaseCount() {
-    setCount((count) => count+1);
+    setCount((count) => count + 1);
   }
 
   return (
@@ -59,9 +59,9 @@ function PageRouter() {
         </nav>
 
         <Routes>
-          <Route path="/about" element={<About />}/>
-          <Route path="/search" element={<Search posts={posts}/>} />
-          <Route path="/post" element={<PostPage posts={posts} addPost={handlePostsChange} user={user}/>} />
+          <Route path="/about" element={<About />} />
+          <Route path="/search" element={<Search posts={posts} />} />
+          <Route path="/post" element={<PostPage posts={posts} addPost={handlePostsChange} user={user} />} />
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<Home />} />
         </Routes>
