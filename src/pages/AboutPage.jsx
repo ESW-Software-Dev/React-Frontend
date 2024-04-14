@@ -15,7 +15,7 @@ const About = () => {
 
       <div className="about-section">
         <h2>Cornell's Food Waste: Statistics</h2>
-        <p>[Find/Fill in Info]</p>
+        <p>Every week, Cornell University generates two tons of wasted food, which is equivalent to approximately 8,000 meals. So, as a campus, we waste 8,000 meals every single week. Annually, Cornell dining halls and small eateries across campus produce 800 tons of food scraps and organic kitchen waste. These numbers highlight the scale of food waste on campus, which is why it is so important to implement strategies to minimize waste. </p>
       </div>
       <div className="about-section">
         <h2>Meet the Team</h2>
