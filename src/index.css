@@ -102,8 +102,8 @@ footer {
   left: 0;
   right: 0;
   padding: 10px;
+  height: 5%;
   text-align: center;
-  margin-top: auto;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -111,17 +111,13 @@ footer {
 }
 
 .footer-left {
-  flex: 1;
   /* Takes all available space on the left */
   text-align: left;
 }
 
 .footer-right {
-  flex: 1;
-  /* Takes all available space on the right */
-  padding-left: 350px;
-  padding-bottom: 25px;
   text-align: center;
+  font-size: 10px;
 }
 
 .copyright {
@@ -138,11 +134,11 @@ footer {
 }
 
 .styled-image {
-  max-width: 80px;
+  max-width: 40px;
   /* Adjust the size of the picture */
 }
 
 .styled-image2 {
-  max-width: 200px;
+  max-width: 100px;
   /* Adjust the size of the picture */
 }

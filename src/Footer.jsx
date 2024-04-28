@@ -8,7 +8,6 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      <div className="footer-content">
         <div className="footer-left">
           {/* Picture on the right */}
           <a href="https://www.cornell.edu/" target="_blank" rel="noopener noreferrer">
@@ -23,11 +22,11 @@ const Footer = () => {
           {/* Contact section */}
           <h2>Contact Us</h2>
           <p>Email: foodsolutions@cornell.edu</p>
+          <div className="copyright">
+            {`Copyright © ESW ${year}`}
+          </div>
         </div>
-      </div>
-      <div className="copyright">
-        {`Copyright © ESW ${year}`}
-      </div>
+
     </footer>
   );
 };
