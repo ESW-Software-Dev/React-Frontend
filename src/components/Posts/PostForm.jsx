@@ -26,7 +26,10 @@ const normFile = (e) => {
   }
   return e?.fileList;
 };
-const FormDisabledDemo = () => {
+const FormDisabledDemo = ({
+  onChange,
+  onSubmit,
+}) => {
   const [componentDisabled, setComponentDisabled] = useState(true);
   return (
     <>
@@ -43,30 +46,24 @@ const FormDisabledDemo = () => {
       >
 
         <Form.Item label="Location">
-          <Input />
+          <Input onChange={onChange} data-key="location" />
         </Form.Item>
         <Form.Item label="Date">
-          <DatePicker />
+          <DatePicker onChange={onChange} data-key="date" />
         </Form.Item>
         <Form.Item label="Time">
-          <TimePicker />
+          <TimePicker onChange={onChange} data-key="time" />
         </Form.Item>
         <Form.Item label="Description">
-          <TextArea rows={4} />
+          <TextArea rows={4} onChange={onChange} data-key="description" />
         </Form.Item>
         <Form.Item label="Owner Name">
-          <Input />
+          <Input onChange={onChange} data-key="name" />
         </Form.Item>
         <Form.Item label="NetID">
-          <Input />
+          <Input onChange={onChange} data-key="netid" />
         </Form.Item>
 
-
-        <Form.Item label="Select">
-          <Select>
-            <Select.Option value="demo">Demo</Select.Option>
-          </Select>
-        </Form.Item>
         <Form.Item label="Dining Hall">
           <div
             style={{
@@ -130,6 +127,8 @@ const FormDisabledDemo = () => {
                 ],
               },
             ]}
+            onChange={onChange}
+            data-key="dining-hall"
           />
         </Form.Item>
 
