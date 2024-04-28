@@ -16,6 +16,7 @@ import {
   TimePicker,
   TreeSelect,
   Upload,
+  FloatButton,
 } from 'antd';
 const { RangePicker } = DatePicker;
 const { TextArea } = Input;
@@ -59,6 +60,7 @@ const FormDisabledDemo = () => {
         <Form.Item label="NetID">
           <Input />
         </Form.Item>
+
 
         <Form.Item label="Select">
           <Select>
@@ -154,6 +156,10 @@ const FormDisabledDemo = () => {
             </button>
           </Upload>
         </Form.Item>
+        <Button type="primary" size="large">
+          Submit
+        </Button>
+        <FloatButton.BackTop />
 
       </Form >
     </>
