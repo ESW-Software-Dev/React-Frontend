@@ -2,6 +2,7 @@ import DisplayForm from '../DisplayForm';
 import AddPost from './AddPost';
 import { useState } from 'react'
 import './AddPostSection.css'
+import PostForm from './PostForm';
 export default function AddPostSection(props) {
     const [postInfo, setPostInfo] = useState({});
     const isOpen = props.isOpen ? "open" : "closed";
@@ -23,7 +24,7 @@ export default function AddPostSection(props) {
                     id="post"
                     onChange={handlePostInfoChange}
                     onSubmit={handlePostSubmit}
-                    FormComponent={AddPost}
+                    FormComponent={PostForm}
                 />
             </div>
         </div>
